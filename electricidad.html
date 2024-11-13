@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricidad</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .producto {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(147, 89, 2, 0.2);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .producto button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .producto button:hover {
+            background-color: #a50808;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .producto h3, .producto p {
+            margin: 10px 0;
+        }
+
+        .producto p {
+            font-size: 1rem;
+            color: #787575;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Iluminación y Electricidad</h1>
+</header>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+        <div class="producto">
+            <img src="img/foco.jpg" alt="Foco">
+            <h3>Focos</h3>
+            <p>Precio: $80 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/linterna.jpg" alt="Linterna">
+            <h3>Linternas</h3>
+            <p>Precio: $120 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/cableado.jpg" alt="Cableado">
+            <h3>Cableado Eléctrico</h3>
+            <p>Precio: $200 MXN por 100 m</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/interruptores.jpg" alt="Interruptores">
+            <h3>Interruptores</h3>
+            <p>Precio: $30 MXN cada uno</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/tomacorriente.jpg" alt="Tomacorriente">
+            <h3>Tomacorriente</h3>
+            <p>Precio: $25 MXN cada uno</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/fusibles.jpg" alt="Fusibles">
+            <h3>Fusibles</h3>
+            <p>Precio: $15 MXN cada uno</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/cajadis.jpg" alt="Caja de distribución">
+            <h3>Caja de Distribución</h3>
+            <p>Precio: $350 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/pelador.jpg" alt="Pelador de cable">
+            <h3>Pelador de Cable</h3>
+            <p>Precio: $70 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

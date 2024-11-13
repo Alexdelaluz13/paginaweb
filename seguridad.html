@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .producto {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .producto button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .producto button:hover {
+            background-color: #d50707;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .producto h3, .producto p {
+            margin: 10px 0;
+        }
+
+        .producto p {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Equipo de Seguridad</h1>
+</header>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+        <div class="producto">
+            <img src="img/casco.jpg" alt="Casco">
+            <h3>Casco de Seguridad</h3>
+            <p>Precio: $300 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/gafas.jpg" alt="Gafas">
+            <h3>Gafas de Seguridad</h3>
+            <p>Precio: $150 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/guantes.jpg" alt="Guantes">
+            <h3>Guantes de Protección</h3>
+            <p>Precio: $200 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/botas.jpg" alt="Botas">
+            <h3>Botas de Seguridad</h3>
+            <p>Precio: $600 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/traje.jpg" alt="Traje">
+            <h3>Traje de Protección</h3>
+            <p>Precio: $800 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/mascaras.jpg" alt="Máscaras">
+            <h3>Máscaras de Protección</h3>
+            <p>Precio: $250 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/señales.jpg" alt="Señales">
+            <h3>Señales de Advertencia</h3>
+            <p>Precio: $100 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/impermeable.jpg" alt="Impermeable">
+            <h3>Capa Impermeable</h3>
+            <p>Precio: $400 MXN</p>
+            <button>Agregar al Carrito</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
